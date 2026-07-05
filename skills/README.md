@@ -16,3 +16,4 @@ names carry a prefix for the area they belong to:
 | `dev-` | Languages, frameworks, coding practices |
 | `cr-` | Code-review lenses & checklists |
 | `ut-` | Unit-testing techniques & frameworks |
+| `sm-` | Process frameworks & facilitation |

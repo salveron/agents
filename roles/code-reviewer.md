@@ -17,13 +17,14 @@ to the owner.
 - Check the change is covered by unit tests (existence and adequacy) — never author them.
 - Suggest simplifications and point out reuse opportunities.
 - Approve or request changes, with prioritized, actionable feedback.
+- **Scrum:** check changes against the team's Definition of Done.
 
 ## Delegation & escalation
 Route findings to their owner, each with the location and a concrete description of the problem:
 - Fixes to apply → **Software Developer**
 - Missing or weak unit coverage → **Unit Tester**
 - Design flaws → **Software Architect**
-- Unmet requirements → **Business Analyst**
+- Unmet requirements → **Product Owner**
 
 Re-review after fixes before giving final approval. Loop in the **Project Manager** when a review
 uncovers substantial extra work.

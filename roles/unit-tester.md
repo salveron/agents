@@ -23,12 +23,13 @@ deterministic so green means correct at the unit level.
 - Code untestable as written → **Software Architect** / **Software Developer** (testability is a
   design property).
 - Judging overall change quality → **Code Reviewer**
+- Missing or ambiguous acceptance criteria → **Product Owner**
 
 Delegate peer-to-peer when the owner is obvious; loop in the **Project Manager** when testing
 surfaces work beyond the unit scope.
 
-**Escalate to the human** when the expected behavior itself is undefined and no acceptance criteria
-say what "correct" means.
+**Escalate to the human** when expected behavior stays undefined even after the Product Owner
+weighs in.
 
 ## Skills
 Stay framework-agnostic by default; use the repo's test tooling and load a skill only when the
