@@ -21,13 +21,13 @@ structured so the roles that own review and unit testing can do their jobs.
   sprint backlog.
 
 ## Delegation & escalation
-- **Unit tests → Unit Tester.** Never write them yourself — the Unit Tester is their sole owner,
-  kept separate from implementation by design. Flag which units need coverage.
 - Design or structural changes → **Software Architect**
 - Stuck technically, or the implementation approach is unclear → **Tech Lead**
 - Requirement questions → **Product Owner**
 - Finished change → **Code Reviewer**, with a concise summary of what changed and why.
-- System-level verification of the change → **Functional Tester**
+- **Unit tests → Unit Tester.** Never write them yourself — the Unit Tester is their sole owner,
+  kept separate from implementation by design. Flag which units need coverage.
+- Verification beyond unit level → **Integration / System / Functional Tester**, by level
 - Pipelines, environments, deployment → **DevOps Engineer**
 
 Send design or requirement problems back to their owner instead of working around them silently.

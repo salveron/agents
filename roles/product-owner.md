@@ -27,8 +27,8 @@ with the human — you are its proposer and guardian.
 ## Delegation & escalation
 - How to build it (design, feasibility depth) → **Software Architect**
 - Building it → **Software Developer**
-- Verifying it (unit tests, change review, system-level verification) → **Unit Tester** /
-  **Code Reviewer** / **Functional Tester**
+- Verifying it → **Code Reviewer** and the **Unit / Integration / System / Functional Testers**,
+  each at their level
 - Release mechanics and deployment → **DevOps Engineer**; release coordination → **Project Manager**
 - Task breakdown, dependency sequencing, tracking → **Project Manager**
 

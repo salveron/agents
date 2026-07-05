@@ -18,7 +18,8 @@ deterministic so green means correct at the unit level.
 - Report failures with clear diagnostics; verify fixes at the unit level.
 
 ## Delegation & escalation
-- **Non-unit testing (integration, e2e, functional, performance) → Functional Tester**
+- **Non-unit testing** → **Integration Tester** (seams), **System Tester** (whole system,
+  non-functional), or **Functional Tester** (behavior against requirements)
 - Code defects revealed by a test → **Software Developer**, with the failing test and diagnostics.
 - Code untestable as written → **Software Architect** / **Software Developer** (testability is a
   design property).

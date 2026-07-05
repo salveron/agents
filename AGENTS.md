@@ -34,7 +34,9 @@ Product Documentation Expert writes the notes.
 | Software Developer | [roles/software-developer.md](roles/software-developer.md) | Implementation, bug fixes, refactoring |
 | Code Reviewer | [roles/code-reviewer.md](roles/code-reviewer.md) | Change review, standards, approval |
 | Unit Tester | [roles/unit-tester.md](roles/unit-tester.md) | Unit testing, mocking, stubbing |
-| Functional Tester | [roles/functional-tester.md](roles/functional-tester.md) | Functional, integration, e2e verification of the running system |
+| Integration Tester | [roles/integration-tester.md](roles/integration-tester.md) | Interface & contract verification between components and systems |
+| System Tester | [roles/system-tester.md](roles/system-tester.md) | Whole-system verification: e2e technical flows, non-functional criteria |
+| Functional Tester | [roles/functional-tester.md](roles/functional-tester.md) | Behavior validation against requirements; acceptance evidence |
 | DevOps Engineer | [roles/devops-engineer.md](roles/devops-engineer.md) | CI/CD, environments, deployment, release mechanics, observability |
 | Product Documentation Expert | [roles/product-documentation-expert.md](roles/product-documentation-expert.md) | User-facing docs, release notes, changelog |
 
@@ -45,7 +47,9 @@ flowchart LR
         SA --> DEV["Software Developer<br>build"]
         DEV --> CR["Code Reviewer<br>approve"]
         DEV --> UT["Unit Tester<br>unit tests"]
-        CR --> FT["Functional Tester<br>verify the running system"]
+        CR --> IT["Integration Tester<br>seams & contracts"]
+        IT --> ST["System Tester<br>whole system, non-functional"]
+        ST --> FT["Functional Tester<br>behavior vs. requirements"]
         FT -->|acceptance evidence| PO
         SA -.- TL["Tech Lead<br>implementation strategy,<br>unblocking"]
         TL -.-> DEV
@@ -70,7 +74,9 @@ role files apply only while this roster is active.
 | Software Developer | [roles/software-developer.md](roles/software-developer.md) | Implementation; sprint breakdown & estimation |
 | Code Reviewer | [roles/code-reviewer.md](roles/code-reviewer.md) | Change review; Definition of Done |
 | Unit Tester | [roles/unit-tester.md](roles/unit-tester.md) | Unit testing, mocking, stubbing |
-| Functional Tester | [roles/functional-tester.md](roles/functional-tester.md) | Increment verification before the sprint review |
+| Integration Tester | [roles/integration-tester.md](roles/integration-tester.md) | Interface & contract verification between components and systems |
+| System Tester | [roles/system-tester.md](roles/system-tester.md) | Whole-system verification: e2e technical flows, non-functional criteria |
+| Functional Tester | [roles/functional-tester.md](roles/functional-tester.md) | Increment validation before the sprint review |
 | DevOps Engineer | [roles/devops-engineer.md](roles/devops-engineer.md) | Releasable increment; pipelines, environments |
 | Product Documentation Expert | [roles/product-documentation-expert.md](roles/product-documentation-expert.md) | User-facing docs, release notes |
 
@@ -80,7 +86,9 @@ flowchart LR
         PO["Product Owner<br>backlog, sprint goal"] --> DEV["Software Developer<br>sprint plan, build"]
         DEV --> CR["Code Reviewer<br>approve, DoD"]
         DEV --> UT["Unit Tester<br>unit tests"]
-        CR --> FT["Functional Tester<br>verify the increment"]
+        CR --> IT["Integration Tester<br>seams & contracts"]
+        IT --> ST["System Tester<br>whole system, non-functional"]
+        ST --> FT["Functional Tester<br>validate the increment"]
         FT -->|accept at review| PO
     end
     SA["Software Architect<br>design, epic-level refinement"] -.-> sprint

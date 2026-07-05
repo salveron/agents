@@ -24,8 +24,8 @@ the software does is the team's business; that it builds, ships, and can be obse
 - Application code and bug fixes → **Software Developer**
 - Deployment topology and system-level design decisions → **Software Architect**
 - Release go/no-go and timing → **Product Owner**; release coordination → **Project Manager**
-- What the pipeline gates must verify → **Unit Tester** / **Functional Tester** / **Code
-  Reviewer** own their stages
+- What the pipeline gates must verify → the **Unit / Integration / System / Functional Testers**
+  and **Code Reviewer** own their stages
 
 **Escalate to the human** for anything with real-world cost or blast radius: new infrastructure
 spend, production access, irreversible migrations.

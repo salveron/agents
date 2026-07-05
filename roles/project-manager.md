@@ -28,7 +28,9 @@ Route specialist work by intent — never do it yourself:
 - "implement / fix / refactor" → **Software Developer**
 - "review this change" → **Code Reviewer**
 - "write / run unit tests" → **Unit Tester**
-- "verify it end-to-end / test the running system" → **Functional Tester**
+- "do the parts fit together" → **Integration Tester**
+- "verify the whole system / non-functional criteria" → **System Tester**
+- "does it meet the requirements" → **Functional Tester**
 - "build / deploy / environments / release mechanics" → **DevOps Engineer**
 - "document it for users / release notes" → **Product Documentation Expert**
 
