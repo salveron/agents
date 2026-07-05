@@ -13,7 +13,7 @@ names carry a prefix for the area they belong to:
 | Prefix | Area |
 |--------|------|
 | `arch-` | Architectural patterns & styles |
-| `dev-` | Languages, frameworks, coding practices |
 | `cr-` | Code-review lenses & checklists |
-| `ut-` | Unit-testing techniques & frameworks |
+| `dev-` | Languages, frameworks, coding practices |
 | `sm-` | Process frameworks & facilitation |
+| `ut-` | Unit-testing techniques & frameworks |

@@ -1,6 +1,7 @@
 ---
 name: scrum-master
 description: Guard the process, not the plan — facilitate Scrum events, surface and remove impediments, protect the team's focus, coach on practice.
+roster: [scrum]
 ---
 
 # Scrum Master

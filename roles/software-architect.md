@@ -1,6 +1,7 @@
 ---
 name: software-architect
 description: Turn requirements into a technical design — patterns, structure, interfaces, data models, non-functional requirements, standards, decision records — without writing production code.
+roster: [core, scrum]
 ---
 
 # Software Architect

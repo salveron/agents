@@ -1,6 +1,7 @@
 ---
 name: code-reviewer
 description: Review changes for correctness, readability, and adherence to design and standards; check unit-test coverage exists; approve or request changes — never implement the fixes.
+roster: [core, scrum]
 ---
 
 # Code Reviewer

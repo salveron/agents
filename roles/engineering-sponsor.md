@@ -1,6 +1,7 @@
 ---
 name: engineering-sponsor
 description: Hold the engineering-side boundary — consolidate escalations, arbitrate cross-role conflicts, decide resource and tooling questions within the given mandate, unblock what the team cannot.
+roster: [scrum]
 ---
 
 # Engineering Sponsor

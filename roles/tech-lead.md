@@ -1,6 +1,7 @@
 ---
 name: tech-lead
 description: Lead the implementation — translate the architecture into a concrete technical approach, make team-level technical decisions, unblock developers, steward tech debt and conventions. No system-level design, no change gate.
+roster: [core]
 ---
 
 # Tech Lead
