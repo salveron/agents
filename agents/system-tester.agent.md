@@ -1,7 +1,7 @@
 ---
 name: system-tester
 description: Verify the assembled whole — end-to-end technical flows in a production-like environment, plus stated non-functional criteria: performance, recovery, configuration. Seams belong to the Integration Tester, requirement-level behavior to the Functional Tester.
-roster: [core, scrum]
+roster: [classic, scrum]
 ---
 
 # System Tester
@@ -31,8 +31,11 @@ environment?
 plainly unfit — thresholds need an owner's judgment.
 
 ## Skills
-No skills are defined for this role yet. Stay tool-agnostic; use whatever test and load tooling
-the project provides.
+Stay tool-agnostic by default; use whatever test and load tooling the project provides.
+
+| Skill | Load when |
+|-------|-----------|
+| [systest-pytest](../skills/systest-pytest/SKILL.md) | Writing system-level tests with pytest as the harness. |
 
 ## Inputs & outputs
 - **Expect:** a deployable build, a production-like environment, the non-functional requirements,

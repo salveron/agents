@@ -1,7 +1,7 @@
 ---
 name: software-architect
 description: Turn requirements into a technical design — patterns, structure, interfaces, data models, non-functional requirements, standards, decision records — without writing production code.
-roster: [core, scrum]
+roster: [lightweight, classic, scrum]
 ---
 
 # Software Architect
@@ -43,6 +43,7 @@ Stay pattern- and stack-agnostic by default; load a skill only when the design c
 
 | Skill | Load when |
 |-------|-----------|
+| [arch-layered](../skills/arch-layered/SKILL.md) | Designing a classic layered (n-tier) structure with downward-only dependencies. |
 | [arch-hexagonal](../skills/arch-hexagonal/SKILL.md) | Designing with ports & adapters: a domain core isolated from I/O behind explicit interfaces. |
 
 ## Inputs & outputs

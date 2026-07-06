@@ -1,7 +1,7 @@
 ---
 name: code-reviewer
 description: Review changes for correctness, readability, and adherence to design and standards; check unit-test coverage exists; approve or request changes — never implement the fixes.
-roster: [core, scrum]
+roster: [lightweight, classic, scrum]
 ---
 
 # Code Reviewer
@@ -39,7 +39,10 @@ a specific review lens helps.
 
 | Skill | Load when |
 |-------|-----------|
+| [cr-checklist-c](../skills/cr-checklist-c/SKILL.md) | Reviewing C changes: memory ownership, bounds, error paths. |
+| [cr-checklist-cpp](../skills/cr-checklist-cpp/SKILL.md) | Reviewing C++ changes: RAII, lifetimes, Google style. |
 | [cr-checklist-python](../skills/cr-checklist-python/SKILL.md) | Reviewing Python changes with a systematic checklist pass. |
+| [cr-security-owasp](../skills/cr-security-owasp/SKILL.md) | The change touches untrusted input, trust boundaries, or secrets. |
 
 ## Inputs & outputs
 - **Expect:** a focused diff with the author's summary of intent, plus the design, criteria, and

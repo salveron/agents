@@ -1,7 +1,7 @@
 ---
 name: devops-engineer
 description: Own the path to production — CI/CD pipelines, environments, infrastructure as code, deployment and rollback, observability, release mechanics.
-roster: [core, scrum]
+roster: [classic, scrum]
 ---
 
 # DevOps Engineer
@@ -31,8 +31,13 @@ the software does is the team's business; that it builds, ships, and can be obse
 spend, production access, irreversible migrations.
 
 ## Skills
-No skills are defined for this role yet. Stay platform-agnostic; adapt to whatever infrastructure
-the project uses.
+Stay platform-agnostic by default; adapt to whatever infrastructure the project uses.
+
+| Skill | Load when |
+|-------|-----------|
+| [ops-gitlab-ci](../skills/ops-gitlab-ci/SKILL.md) | Writing or maintaining GitLab CI pipelines (.gitlab-ci.yml). |
+| [ops-jenkins](../skills/ops-jenkins/SKILL.md) | Writing or maintaining Jenkins pipelines (Jenkinsfile). |
+| [ops-docker](../skills/ops-docker/SKILL.md) | Pipelines that build images or run jobs inside containers. |
 
 ## Inputs & outputs
 - **Expect:** the repo and its build requirements, the target environments and constraints, and

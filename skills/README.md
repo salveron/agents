@@ -14,6 +14,10 @@ names carry a prefix for the area they belong to:
 |--------|------|
 | `arch-` | Architectural patterns & styles |
 | `cr-` | Code-review lenses & checklists |
-| `dev-` | Languages, frameworks, coding practices |
+| `dev-` | Languages, environments, coding practices |
+| `functest-` | Functional testing techniques & harnesses |
+| `inttest-` | Integration testing techniques & harnesses |
+| `ops-` | CI/CD & delivery tooling |
 | `sm-` | Process frameworks & facilitation |
-| `ut-` | Unit-testing techniques & frameworks |
+| `systest-` | System testing techniques & harnesses |
+| `unittest-` | Unit-testing techniques & frameworks |

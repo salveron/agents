@@ -1,7 +1,7 @@
 ---
 name: integration-tester
 description: Verify the seams — interactions between components and with external systems: contracts, interfaces, data flow across boundaries. Units belong to the Unit Tester, the assembled whole to the System Tester.
-roster: [core, scrum]
+roster: [classic, scrum]
 ---
 
 # Integration Tester
@@ -31,8 +31,11 @@ every boundary: component to component, and system to external service.
 resolves it.
 
 ## Skills
-No skills are defined for this role yet. Stay tool-agnostic; use whatever test tooling the repo
-provides.
+Stay tool-agnostic by default; use whatever test tooling the repo provides.
+
+| Skill | Load when |
+|-------|-----------|
+| [inttest-pytest](../skills/inttest-pytest/SKILL.md) | Writing integration tests with pytest as the harness. |
 
 ## Inputs & outputs
 - **Expect:** interface contracts and data models, the components to integrate, and an

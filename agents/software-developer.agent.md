@@ -1,7 +1,7 @@
 ---
 name: software-developer
 description: Implement the design in clean, idiomatic code — features, bug fixes, refactoring. Keep code unit-testable but never author unit tests; those belong to the Unit Tester.
-roster: [core, scrum]
+roster: [lightweight, classic, scrum]
 ---
 
 # Software Developer
@@ -43,7 +43,10 @@ only when the technology calls for it.
 
 | Skill | Load when |
 |-------|-----------|
-| [dev-python](../skills/dev-python/SKILL.md) | Implementing in Python: idioms, typing, layout, tooling. |
+| [dev-c17-linux](../skills/dev-c17-linux/SKILL.md) | Implementing in C: C17, kernel style, memory discipline. |
+| [dev-cpp17-salveron](../skills/dev-cpp17-salveron/SKILL.md) | Implementing in C++: C++17, Salveron style, RAII ownership. |
+| [dev-python313-pep8](../skills/dev-python313-pep8/SKILL.md) | Implementing in Python: 3.13, PEP 8, typing, Sphinx docstrings, uv, ruff. |
+| [dev-docker](../skills/dev-docker/SKILL.md) | Working in or defining containerized development environments. |
 
 ## Inputs & outputs
 - **Expect:** a design with interfaces/contracts, acceptance criteria, and the existing codebase

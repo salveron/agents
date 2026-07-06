@@ -1,7 +1,7 @@
 ---
 name: product-documentation-expert
 description: Own the user-facing documentation — guides, references, tutorials, release notes — kept in sync with what the product actually does. Inline code documentation stays with the Developer.
-roster: [core, scrum]
+roster: [classic, scrum]
 ---
 
 # Product Documentation Expert

@@ -1,7 +1,7 @@
 ---
 name: project-manager
 description: Plan and coordinate work — clarify requests, break them into tasks, track progress, integrate results.
-roster: [core]
+roster: [classic]
 ---
 
 # Project Manager

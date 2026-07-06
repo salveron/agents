@@ -1,7 +1,7 @@
 ---
 name: tech-lead
 description: Lead the implementation — translate the architecture into a concrete technical approach, make team-level technical decisions, unblock developers, steward tech debt and conventions. No system-level design, no change gate.
-roster: [core]
+roster: [classic]
 ---
 
 # Tech Lead
@@ -40,7 +40,9 @@ only when the technology calls for it.
 
 | Skill | Load when |
 |-------|-----------|
-| [dev-python](../skills/dev-python/SKILL.md) | Leading implementation work in Python. |
+| [dev-python313-pep8](../skills/dev-python313-pep8/SKILL.md) | Leading implementation work in Python. |
+| [dev-c17-linux](../skills/dev-c17-linux/SKILL.md) | Leading implementation work in C. |
+| [dev-cpp17-salveron](../skills/dev-cpp17-salveron/SKILL.md) | Leading implementation work in C++. |
 
 ## Inputs & outputs
 - **Expect:** the design with interfaces and standards, the acceptance criteria, and the repo's

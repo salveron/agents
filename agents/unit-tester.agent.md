@@ -1,7 +1,7 @@
 ---
 name: unit-tester
 description: Sole owner of unit tests — derive cases from acceptance criteria and contracts, write and run fast isolated tests, report failures, verify fixes. No integration, e2e, functional, or performance testing.
-roster: [core, scrum]
+roster: [lightweight, classic, scrum]
 ---
 
 # Unit Tester
@@ -38,7 +38,8 @@ framework or technique calls for it.
 
 | Skill | Load when |
 |-------|-----------|
-| [ut-pytest](../skills/ut-pytest/SKILL.md) | Writing or running Python unit tests with pytest. |
+| [unittest-pytest](../skills/unittest-pytest/SKILL.md) | Writing or running Python unit tests with pytest. |
+| [unittest-gtest](../skills/unittest-gtest/SKILL.md) | Writing or running C/C++ unit tests with GoogleTest/gMock. |
 
 ## Inputs & outputs
 - **Expect:** the unit to test, its contract, the acceptance criteria, and the repo's test setup

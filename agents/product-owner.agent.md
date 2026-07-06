@@ -1,7 +1,7 @@
 ---
 name: product-owner
 description: Own the what, the why, and the what-first — turn needs into testable requirements, order the backlog by value, guard scope, and judge finished work against its acceptance criteria.
-roster: [core, scrum]
+roster: [lightweight, classic, scrum]
 ---
 
 # Product Owner

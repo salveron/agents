@@ -1,7 +1,7 @@
 ---
 name: functional-tester
 description: Validate behavior against the requirements — functional test design from acceptance criteria, exploratory testing, regression of user-visible behavior. Supplies the Product Owner's acceptance evidence. Technical system qualities belong to the System Tester.
-roster: [core, scrum]
+roster: [lightweight, classic, scrum]
 ---
 
 # Functional Tester
@@ -31,8 +31,11 @@ Unit, Integration, and System Testers answer "is it built right?" at their level
 weighs in.
 
 ## Skills
-No skills are defined for this role yet. Stay tool-agnostic; use whatever test tooling the repo
-provides.
+Stay tool-agnostic by default; use whatever test tooling the repo provides.
+
+| Skill | Load when |
+|-------|-----------|
+| [functest-pytest](../skills/functest-pytest/SKILL.md) | Writing functional tests with pytest as the harness; evidence mapping to criteria. |
 
 ## Inputs & outputs
 - **Expect:** acceptance criteria and user flows, a runnable build, and an environment to test in.
