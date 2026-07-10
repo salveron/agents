@@ -33,8 +33,8 @@ frameworks, databases, and transport, or a system that must be testable without 
 2. Ask what the core must reach for → define driven ports, named for the *need* ("ArticleStore"),
    not the technology ("PostgresClient").
 3. Implement the core against the ports; unit-test it with in-memory fakes.
-4. Implement adapters last; integration-test them against the real technology (the seam the
-   Integration Tester verifies).
+4. Implement adapters last; integration-test them against the real technology (the seams that
+   integration-level tests pin).
 
 ## Pitfalls & anti-patterns
 - Anemic core: all logic drifts into adapters or "service" glue — the hexagon protects nothing.

@@ -23,8 +23,8 @@ C or C++ unit tests are being written or run with GoogleTest.
 - **gMock:** `MOCK_METHOD` on the seam interface (abstract class from the design); default to
   `NiceMock` and assert only the interactions that are the contract — `StrictMock` invites
   brittle tests.
-- **Build:** CMake `FetchContent` for googletest; register with `gtest_discover_tests()`; run via
-  `ctest` — tests build with the same warnings-as-errors as production code.
+- **Build:** wired through CMake/ctest — `dev-cmake322` owns the setup; tests build with the same
+  warnings-as-errors as production code.
 - Testing C: compile the C unit into the C++ test target; wrap the header in `extern "C"`.
 
 ## Steps / patterns

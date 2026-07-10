@@ -11,7 +11,8 @@ The task is implemented in Python and needs language, layout, or tooling guidanc
 ## Scope
 - **Covers:** Python 3.13, PEP 8 + typing, Sphinx docstrings, uv, ruff, project layout, OO design.
 - **Does not cover:** Unit-test framework specifics — see `unittest-pytest`; higher test levels —
-  `inttest-pytest` / `systest-pytest` / `functest-pytest`; containers — `dev-docker`.
+  `inttest-pytest` / `systest-pytest` / `functest-pytest`; containers — `dev-docker`; async —
+  `dev-python313-async`.
 
 ## Core guidance
 - **Target Python 3.13.** Modern syntax is expected: `list[str]`, `X | None`, `type` aliases,
@@ -23,7 +24,8 @@ The task is implemented in Python and needs language, layout, or tooling guidanc
   `__init__.py` files are exempt.
 - **Design object-oriented.** Model the domain in classes, not sprawling module-private free
   functions. Use `@dataclass` (often `frozen=True`) for value-like types, regular classes for
-  behavior, `Protocol` for seams. A module is a namespace for related classes, not a bag of helpers.
+  behavior, `Protocol` for seams. A module is a namespace for related classes, not a bag of
+  helpers. Shape the classes with `dev-oop-design` (SOLID, patterns).
 - **uv owns the project.** `uv init`, `uv add`, `uv sync`, `uv run <cmd>`; `pyproject.toml` is the
   single source of configuration; no `requirements.txt`, no manual venv management.
 - **ruff owns style.** `uv run ruff format` + `uv run ruff check`. Enabled rule sets for now —

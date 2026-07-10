@@ -35,9 +35,9 @@ Stay platform-agnostic by default; adapt to whatever infrastructure the project 
 
 | Skill | Load when |
 |-------|-----------|
+| [ops-docker](../skills/ops-docker/SKILL.md) | Pipelines that build images or run jobs inside containers. |
 | [ops-gitlab-ci](../skills/ops-gitlab-ci/SKILL.md) | Writing or maintaining GitLab CI pipelines (.gitlab-ci.yml). |
 | [ops-jenkins](../skills/ops-jenkins/SKILL.md) | Writing or maintaining Jenkins pipelines (Jenkinsfile). |
-| [ops-docker](../skills/ops-docker/SKILL.md) | Pipelines that build images or run jobs inside containers. |
 
 ## Inputs & outputs
 - **Expect:** the repo and its build requirements, the target environments and constraints, and

@@ -40,9 +40,14 @@ only when the technology calls for it.
 
 | Skill | Load when |
 |-------|-----------|
-| [dev-python313-pep8](../skills/dev-python313-pep8/SKILL.md) | Leading implementation work in Python. |
 | [dev-c17-linux](../skills/dev-c17-linux/SKILL.md) | Leading implementation work in C. |
+| [dev-cmake322](../skills/dev-cmake322/SKILL.md) | Build-system decisions for C/C++ (CMake). |
+| [dev-cpp17-concurrency](../skills/dev-cpp17-concurrency/SKILL.md) | Deciding threading strategy in C++: confinement, locks, ownership. |
 | [dev-cpp17-salveron](../skills/dev-cpp17-salveron/SKILL.md) | Leading implementation work in C++. |
+| [dev-docker](../skills/dev-docker/SKILL.md) | Containerized development environment decisions. |
+| [dev-oop-design](../skills/dev-oop-design/SKILL.md) | Deciding class/module structure: SOLID and design patterns. |
+| [dev-python313-async](../skills/dev-python313-async/SKILL.md) | Deciding where async pays off in Python; structuring the boundaries. |
+| [dev-python313-pep8](../skills/dev-python313-pep8/SKILL.md) | Leading implementation work in Python. |
 
 ## Inputs & outputs
 - **Expect:** the design with interfaces and standards, the acceptance criteria, and the repo's

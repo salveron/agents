@@ -18,8 +18,8 @@ being written or run with pytest as the harness.
 - **Location & marker:** `tests/functional/`, marker `functional` in `pyproject.toml`; its own CI
   stage — the last gate before acceptance.
 - **One criterion, one test (at least):** name the test after the acceptance criterion it
-  verifies and cite the criterion id in the docstring — the JUnit report then doubles as the
-  Product Owner's acceptance evidence.
+  verifies and cite the criterion id in the docstring — the JUnit report then doubles as
+  acceptance evidence.
 - **Take the user's seat:** drive the product through its real interfaces (CLI, API, UI harness)
   in realistic scenarios; assert on what the user observes, not on internals.
 - **Exploratory findings become tests:** every surprising behavior found while exploring is
@@ -32,7 +32,7 @@ being written or run with pytest as the harness.
 2. Reuse the environment fixtures of the system suite where possible; functional tests need a
    running product, not their own bespoke deployment logic.
 3. Write scenarios as user flows: setup → user actions → observable outcome.
-4. Emit `--junitxml`; hand the criteria-to-result mapping to the Product Owner.
+4. Emit `--junitxml`; hand the criteria-to-result mapping to whoever owns the acceptance decision.
 
 ## Pitfalls & anti-patterns
 - Testing implementation details — functional tests break only when *behavior* breaks.

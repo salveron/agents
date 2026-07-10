@@ -44,9 +44,13 @@ only when the technology calls for it.
 | Skill | Load when |
 |-------|-----------|
 | [dev-c17-linux](../skills/dev-c17-linux/SKILL.md) | Implementing in C: C17, kernel style, memory discipline. |
+| [dev-cmake322](../skills/dev-cmake322/SKILL.md) | Creating or maintaining CMake builds for C/C++. |
+| [dev-cpp17-concurrency](../skills/dev-cpp17-concurrency/SKILL.md) | C++ code going multithreaded: threads, locks, atomics. |
 | [dev-cpp17-salveron](../skills/dev-cpp17-salveron/SKILL.md) | Implementing in C++: C++17, Salveron style, RAII ownership. |
-| [dev-python313-pep8](../skills/dev-python313-pep8/SKILL.md) | Implementing in Python: 3.13, PEP 8, typing, Sphinx docstrings, uv, ruff. |
 | [dev-docker](../skills/dev-docker/SKILL.md) | Working in or defining containerized development environments. |
+| [dev-oop-design](../skills/dev-oop-design/SKILL.md) | Shaping classes, modules, and interfaces: SOLID and design patterns. |
+| [dev-python313-async](../skills/dev-python313-async/SKILL.md) | Implementing async Python: asyncio, task groups, cancellation. |
+| [dev-python313-pep8](../skills/dev-python313-pep8/SKILL.md) | Implementing in Python: 3.13, PEP 8, typing, Sphinx docstrings, uv, ruff. |
 
 ## Inputs & outputs
 - **Expect:** a design with interfaces/contracts, acceptance criteria, and the existing codebase

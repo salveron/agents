@@ -38,8 +38,8 @@ framework or technique calls for it.
 
 | Skill | Load when |
 |-------|-----------|
-| [unittest-pytest](../skills/unittest-pytest/SKILL.md) | Writing or running Python unit tests with pytest. |
 | [unittest-gtest](../skills/unittest-gtest/SKILL.md) | Writing or running C/C++ unit tests with GoogleTest/gMock. |
+| [unittest-pytest](../skills/unittest-pytest/SKILL.md) | Writing or running Python unit tests with pytest. |
 
 ## Inputs & outputs
 - **Expect:** the unit to test, its contract, the acceptance criteria, and the repo's test setup

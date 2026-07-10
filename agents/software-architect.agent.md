@@ -43,8 +43,8 @@ Stay pattern- and stack-agnostic by default; load a skill only when the design c
 
 | Skill | Load when |
 |-------|-----------|
-| [arch-layered](../skills/arch-layered/SKILL.md) | Designing a classic layered (n-tier) structure with downward-only dependencies. |
 | [arch-hexagonal](../skills/arch-hexagonal/SKILL.md) | Designing with ports & adapters: a domain core isolated from I/O behind explicit interfaces. |
+| [arch-layered](../skills/arch-layered/SKILL.md) | Designing a classic layered (n-tier) structure with downward-only dependencies. |
 
 ## Inputs & outputs
 - **Expect:** requirements and acceptance criteria, known constraints, and the existing codebase's

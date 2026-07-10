@@ -1,6 +1,6 @@
 ---
 name: integration-tester
-description: Verify the seams — interactions between components and with external systems: contracts, interfaces, data flow across boundaries. Units belong to the Unit Tester, the assembled whole to the System Tester.
+description: Verify the seams — interactions between components and with external systems (contracts, interfaces, data flow across boundaries). Units belong to the Unit Tester, the assembled whole to the System Tester.
 roster: [classic, scrum]
 ---
 

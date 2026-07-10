@@ -1,6 +1,6 @@
 ---
 name: system-tester
-description: Verify the assembled whole — end-to-end technical flows in a production-like environment, plus stated non-functional criteria: performance, recovery, configuration. Seams belong to the Integration Tester, requirement-level behavior to the Functional Tester.
+description: Verify the assembled whole — end-to-end technical flows in a production-like environment, plus stated non-functional criteria (performance, recovery, configuration). Seams belong to the Integration Tester, requirement-level behavior to the Functional Tester.
 roster: [classic, scrum]
 ---
 

@@ -22,24 +22,22 @@ finding and separate must-fix from nice-to-have.
    - Resources: files/locks/connections managed with `with`; no leaks on early returns.
    - Mutable default arguments; unintended shared state on class attributes.
    - Behavior matches the acceptance criteria and the stated intent of the change.
-2. **Types**
-   - Public functions/methods fully annotated; no un-justified `Any`; modern syntax (`X | None`).
-   - Interfaces expressed as `Protocol` where the design defines a seam.
-3. **Design (OO-first, per repo standard)**
-   - New logic lives in cohesive classes, not free-function piles; dataclasses for value types.
-   - Dependencies injected, not instantiated inline; I/O kept at the edges.
+2. **Types** — conformance to `dev-python313-pep8` (that skill owns the typing policy)
+   - The public surface is annotated as required; suppressions (`Any`, `# type: ignore`) are
+     justified in place.
+3. **Design** — structure per `dev-oop-design` and the OO-first rule in `dev-python313-pep8`
    - The change is minimal and focused; no drive-by refactoring.
 4. **Style** — conformance to `dev-python313-pep8` (that skill owns the exact rules)
    - `ruff format` + `ruff check` clean; naming, typing, and required docstrings all pass.
    - Comments explain *why*, not *what*.
 5. **Tests & docs**
-   - Unit coverage exists for new logic (authored by the Unit Tester) and exercises error paths.
+   - Unit coverage exists for new logic and exercises error paths.
    - Inline docs updated with the change.
 
 ## Pitfalls & anti-patterns
 - Approving on style alone — a beautifully formatted wrong change is still wrong.
 - Letting `# type: ignore` and `Any` pass without a stated reason.
-- Treating missing tests as the author's problem — route the gap to the Unit Tester explicitly.
+- Treating missing tests as the author's problem — flag the coverage gap to its owner explicitly.
 
 ## References
 - `dev-python313-pep8` (the standards this checklist enforces) · [ruff rules](https://docs.astral.sh/ruff/rules/)

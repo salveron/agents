@@ -28,7 +28,8 @@ written or run with pytest as the harness, including against non-Python componen
 - **Timeouts** on everything awaited; explicit readiness polling with deadlines, never bare sleeps.
 
 ## Steps / patterns
-1. From the Architect's contract, list the interactions: happy path, each error, each boundary.
+1. From the documented interface contract, list the interactions: happy path, each error, each
+   boundary.
 2. Build the resource fixture (start, wait-until-ready, yield, tear down) before any test.
 3. One interaction per test, named after the contract clause it pins.
 4. Emit `--junitxml` results so the seam's status is visible in the pipeline.
