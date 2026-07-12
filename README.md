@@ -20,19 +20,27 @@ irreversible.
 
 ## Using the roles as agents
 
-- **Claude Code** — every role is a subagent in [.claude/agents/](.claude/agents/)
-  (e.g. "use the software-developer subagent").
-- **GitHub Copilot** — every role is an agent in [.github/agents/](.github/agents/).
+Two setup scripts symlink each role and skill into the directory a tool reads. `agents/` and
+`skills/` stay the single source of truth: **add a role by dropping a new `agents/<name>.agent.md`,
+or a skill as `skills/<name>/SKILL.md`, then re-run the relevant script** — the new entry is picked
+up with no manual linking. Both scripts are idempotent and never overwrite content they don't own,
+so the target directory can safely hold other, unrelated agents or skills alongside these.
 
-Both `.claude/agents` and `.github/agents` are **directory symlinks to [agents/](agents/)**, and the
-role files are named `*.agent.md`. So `agents/` is the single, literal source of truth: edit a role
-and every tool sees it immediately; **add a role by dropping a new `agents/<name>.agent.md` — it
-appears in both tools automatically, with no new links to create**.
+- **Claude Code, from any project on this machine** — run
+  [`scripts/setup_claude_code.py`](scripts/setup_claude_code.py) once. It symlinks each role and
+  skill into `~/.claude/agents/` and `~/.claude/skills/`, and imports [AGENTS.md](AGENTS.md) into
+  `~/.claude/CLAUDE.md`, so the whole roster is available from every working directory. Pass a
+  different config directory as an optional argument (defaults to `~/.claude`); safe to re-run after
+  every `git pull`.
+- **GitHub Copilot, in a given project** — run
+  [`scripts/setup_github_copilot.py`](scripts/setup_github_copilot.py) `<project-root>` (use `.` for
+  this repo itself). Copilot has no machine-wide config directory, so this links `.github/agents/`,
+  `.github/skills/`, and `.github/AGENTS.md` at the project level, and is re-run per project that
+  should see this roster.
 
-> **Windows note:** git materializes symlinks as real links only when `core.symlinks=true` (needs
-> Developer Mode or an elevated shell). Without it, `.claude/agents` and `.github/agents` are
-> checked out as small text files containing the target path and the agents won't resolve. On
-> Windows, enable symlinks — or replace each with a real directory of copies of the role files.
+> **Windows note:** creating symlinks needs `core.symlinks=true` and either Developer Mode or an
+> elevated shell. Without symlink support the setup scripts fail rather than silently linking; on
+> Windows, enable symlinks — or replace each link with a real copy of the role or skill.
 
 ### Kickoff template
 
