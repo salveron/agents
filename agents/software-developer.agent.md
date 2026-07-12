@@ -51,6 +51,8 @@ only when the technology calls for it.
 | [dev-oop-design](../skills/dev-oop-design/SKILL.md) | Shaping classes, modules, and interfaces: SOLID and design patterns. |
 | [dev-python313-async](../skills/dev-python313-async/SKILL.md) | Implementing async Python: asyncio, task groups, cancellation. |
 | [dev-python313-pep8](../skills/dev-python313-pep8/SKILL.md) | Implementing in Python: 3.13, PEP 8, typing, Sphinx docstrings, uv, ruff. |
+| [dev-rust2024](../skills/dev-rust2024/SKILL.md) | Implementing in Rust: edition 2024, ownership, errors, cargo, rustfmt + clippy. |
+| [dev-rust2024-async](../skills/dev-rust2024-async/SKILL.md) | Rust code going async or concurrent: tokio, tasks, cancellation. |
 
 ## Inputs & outputs
 - **Expect:** a design with interfaces/contracts, acceptance criteria, and the existing codebase

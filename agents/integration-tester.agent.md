@@ -35,7 +35,8 @@ Stay tool-agnostic by default; use whatever test tooling the repo provides.
 
 | Skill | Load when |
 |-------|-----------|
-| [inttest-pytest](../skills/inttest-pytest/SKILL.md) | Writing integration tests with pytest as the harness. |
+| [inttest-pytest](../skills/inttest-pytest/SKILL.md) | Writing integration tests with pytest — the default for external-interface seams in any language, incl. Rust/C/C++ binaries and services. |
+| [unittest-rust](../skills/unittest-rust/SKILL.md) | Only when the seam is a Rust library's public API — cargo `tests/` in-language (external interfaces use inttest-pytest). |
 
 ## Inputs & outputs
 - **Expect:** interface contracts and data models, the components to integrate, and an

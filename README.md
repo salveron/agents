@@ -47,7 +47,7 @@ so the target directory can safely hold other, unrelated agents or skills alongs
 ```text
 Roster: lightweight
 Vision: <what to build and why>
-Stack: <e.g. Python 3.13 + uv, or C++17 + CMake>
+Stack: <e.g. Python 3.13 + uv, C++17 + CMake, or Rust 2024 + cargo>
 Constraints: <deadlines, non-goals, quality bars>
 ```
 

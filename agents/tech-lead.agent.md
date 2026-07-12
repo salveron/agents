@@ -48,6 +48,8 @@ only when the technology calls for it.
 | [dev-oop-design](../skills/dev-oop-design/SKILL.md) | Deciding class/module structure: SOLID and design patterns. |
 | [dev-python313-async](../skills/dev-python313-async/SKILL.md) | Deciding where async pays off in Python; structuring the boundaries. |
 | [dev-python313-pep8](../skills/dev-python313-pep8/SKILL.md) | Leading implementation work in Python. |
+| [dev-rust2024](../skills/dev-rust2024/SKILL.md) | Leading implementation work in Rust: ownership, errors, cargo discipline. |
+| [dev-rust2024-async](../skills/dev-rust2024-async/SKILL.md) | Deciding where async pays off in Rust; structuring the boundaries with tokio. |
 
 ## Inputs & outputs
 - **Expect:** the design with interfaces and standards, the acceptance criteria, and the repo's

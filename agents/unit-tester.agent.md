@@ -40,6 +40,7 @@ framework or technique calls for it.
 |-------|-----------|
 | [unittest-gtest](../skills/unittest-gtest/SKILL.md) | Writing or running C/C++ unit tests with GoogleTest/gMock. |
 | [unittest-pytest](../skills/unittest-pytest/SKILL.md) | Writing or running Python unit tests with pytest. |
+| [unittest-rust](../skills/unittest-rust/SKILL.md) | Writing or running Rust tests with the built-in harness and mockall. |
 
 ## Inputs & outputs
 - **Expect:** the unit to test, its contract, the acceptance criteria, and the repo's test setup

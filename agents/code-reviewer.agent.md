@@ -42,6 +42,7 @@ a specific review lens helps.
 | [cr-checklist-c](../skills/cr-checklist-c/SKILL.md) | Reviewing C changes: memory ownership, bounds, error paths. |
 | [cr-checklist-cpp](../skills/cr-checklist-cpp/SKILL.md) | Reviewing C++ changes: RAII, lifetimes, Salveron style. |
 | [cr-checklist-python](../skills/cr-checklist-python/SKILL.md) | Reviewing Python changes with a systematic checklist pass. |
+| [cr-checklist-rust](../skills/cr-checklist-rust/SKILL.md) | Reviewing Rust changes: unsafe, ownership, errors, clippy conformance. |
 | [cr-performance](../skills/cr-performance/SKILL.md) | The change touches hot paths or performance-sensitive code. |
 | [cr-security-owasp](../skills/cr-security-owasp/SKILL.md) | The change touches untrusted input, trust boundaries, or secrets. |
 | [dev-oop-design](../skills/dev-oop-design/SKILL.md) | Judging class/module structure: SOLID and pattern fit. |
