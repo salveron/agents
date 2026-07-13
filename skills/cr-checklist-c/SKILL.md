@@ -34,6 +34,8 @@ everything else in the review. Cite a location for every finding.
 5. **Style & API** — conformance to `dev-c17-linux` (that skill owns the style rules)
    - Kernel style followed (naming, braces, flat functions, early returns); check against that skill.
    - `const` correctness; `NULL`-handling of parameters documented in the function comment.
+   - Comment density within the working-agreement caps: documentation in headers, sources
+     inline-only.
 
 ## Pitfalls & anti-patterns
 - Reviewing the happy path only — most C defects live in the error path.

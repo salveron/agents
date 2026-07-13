@@ -29,7 +29,8 @@ finding and separate must-fix from nice-to-have.
    - The change is minimal and focused; no drive-by refactoring.
 4. **Style** — conformance to `dev-python313-pep8` (that skill owns the exact rules)
    - `ruff format` + `ruff check` clean; naming, typing, and required docstrings all pass.
-   - Comments explain *why*, not *what*.
+   - Comments explain *why*, not *what*; comment density (docstrings included) within the
+     working-agreement cap.
 5. **Tests & docs**
    - Unit coverage exists for new logic and exercises error paths.
    - Inline docs updated with the change.

@@ -23,6 +23,8 @@ The task is implemented in C and needs language, style, or memory-discipline gui
   check every return value that can fail; centralize cleanup with `goto out`-style error paths —
   idiomatic, not a smell.
 - **Const-correctness** on pointers that don't mutate; keep functions short and single-purpose.
+- **Headers carry the documentation** — function contracts, ownership, error conventions; source
+  files take inline comments only (per the working-agreement caps).
 
 ## Steps / patterns
 1. Define the structs and their ownership rules first; who allocates, who frees.

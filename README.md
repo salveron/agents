@@ -13,8 +13,8 @@ irreversible.
   prompt: identity, responsibilities, delegation & escalation rules, skills to load, and working
   principles. Every role decides for itself whether a task is theirs or belongs to another role.
 - **Rosters** ([AGENTS.md](AGENTS.md)) pick which roles are active. AGENTS.md is the single home
-  for their line-ups, routing rules, and the roster-specific tagged duties that apply only within
-  a given roster.
+  for their line-ups, routing rules, the always-on working agreements, and the roster-specific
+  tagged duties that apply only within a given roster.
 - **Skills** ([skills/](skills/README.md)) keep the roles technology-free: one folder per skill,
   prefixed by area, loaded only when a task needs it.
 

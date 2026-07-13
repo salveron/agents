@@ -2,7 +2,9 @@
 
 Skills are on-demand knowledge modules that attach a specific technology, pattern, or framework to
 an otherwise generic agent. Role files stay technology-agnostic and list their skills in a table;
-the "how to use X" lives here and is loaded only when a task needs it.
+the "how to use X" lives here and is loaded only when a task needs it. Skills also grow *during*
+projects: reusable, non-project-specific knowledge captured mid-engagement lands here — in the
+matching skill or a new folder — per the working agreements in [AGENTS.md](../AGENTS.md).
 
 ## Structure
 

@@ -19,9 +19,10 @@ The task is implemented in Python and needs language, layout, or tooling guidanc
   structural pattern matching where it clarifies, f-strings everywhere.
 - **Type everything public.** Full annotations on public functions, methods, and attributes;
   `typing.Protocol` for interfaces (ports); avoid `Any` — reach for generics or unions first.
-- **Document with Sphinx-style docstrings.** Every module, class, and public function/method
-  carries a docstring using reST fields — `:param x:`, `:returns:`, `:raises:`. Only empty
-  `__init__.py` files are exempt.
+- **Document with Sphinx-style docstrings, tersely.** Every module, class, and public
+  function/method carries a docstring — one line by default; reST fields (`:param x:`,
+  `:returns:`, `:raises:`) only where the contract isn't obvious from names and types. Only empty
+  `__init__.py` files are exempt. Docstrings count toward the working-agreement comment cap.
 - **Design object-oriented.** Model the domain in classes, not sprawling module-private free
   functions. Use `@dataclass` (often `frozen=True`) for value-like types, regular classes for
   behavior, `Protocol` for seams. A module is a namespace for related classes, not a bag of

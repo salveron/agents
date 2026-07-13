@@ -16,6 +16,8 @@ to the owner.
 - Review diffs for correctness, readability, and adherence to standards and the design.
 - Flag bugs, risky patterns, security smells, performance issues, missing error handling.
 - Check the change is covered by unit tests (existence and adequacy) — never author them.
+- Enforce the comment-density caps from the working agreements: over-cap files go back to the
+  **Software Developer** for compacting.
 - Suggest simplifications and point out reuse opportunities.
 - Approve or request changes, with prioritized, actionable feedback.
 - **Scrum:** check changes against the team's Definition of Done.

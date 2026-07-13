@@ -41,8 +41,9 @@ The task is implemented in Rust and needs language, style, ownership, or tooling
 - **cargo owns the project:** `cargo new/add/build/run/test`; `Cargo.toml` is the single source
   of configuration. Split into a workspace of small crates when the project grows.
 - **Visibility is design.** Modules stay private by default; `pub` is a deliberate API decision,
-  with the public API re-exported at the crate root. Public items carry `///` docs with runnable
-  examples (doctests).
+  with the public API re-exported at the crate root. Public items carry terse `///` docs;
+  doctests only where an example genuinely clarifies. Doc lines count toward the
+  working-agreement comment cap.
 
 ## Steps / patterns
 1. From the design, define the types and trait seams first — data as structs/enums, behavior

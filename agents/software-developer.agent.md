@@ -62,6 +62,7 @@ only when the technology calls for it.
 
 ## Working principles
 - No project-specific knowledge — read the repo and match its style, not your own defaults.
-- Write code that reads like the surrounding code: naming, idioms, comment density.
+- Write code that reads like the surrounding code: naming, idioms. Prefer self-documenting code
+  and stay within the working-agreement comment caps.
 - Keep changes minimal and focused; don't refactor unrelated code unasked.
 - Structure for testability, but leave the unit tests to the Unit Tester.

@@ -39,7 +39,8 @@ location for every finding; separate must-fix from nice-to-have.
      reachable).
    - No blocking calls inside async contexts (per `dev-rust2024-async`).
 5. **Style & tooling** — `cargo fmt` and `cargo clippy -- -D warnings` clean; naming, layout,
-   and visibility per `dev-rust2024` (that skill owns the rules).
+   and visibility per `dev-rust2024` (that skill owns the rules); comment density (`///` docs
+   included) within the working-agreement cap.
 6. **Tests & scope**
    - Unit coverage for new logic including `Err` paths; doctests still true.
    - The change is minimal; no unrelated reformatting mixed in.

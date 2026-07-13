@@ -31,6 +31,8 @@ for every finding; separate must-fix from nice-to-have.
 4. **Style** — conformance to `dev-cpp17-salveron` (that skill owns the naming/layout rules)
    - Naming, file names, include order, and header guards all follow that skill.
    - `const` correctness on methods and parameters.
+   - Comment density within the working-agreement caps: documentation in headers, sources
+     inline-only.
 5. **Tests & scope**
    - Unit coverage for new logic, including failure returns.
    - The change is minimal; no unrelated reformatting mixed in.

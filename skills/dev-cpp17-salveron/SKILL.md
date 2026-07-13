@@ -33,6 +33,8 @@ The task is implemented in C++ and needs language, style, or ownership guidance.
   non-owning observers; `std::shared_ptr` only for genuinely shared lifetime. No naked
   `new`/`delete` in application code. RAII is also what makes stack unwinding safe.
 - **Rule of zero** first; if a destructor is needed, define/`delete` the full set of five.
+- **Headers carry the documentation** — contracts, ownership, error behavior; source files take
+  inline comments only (per the working-agreement caps).
 - Mark single-argument constructors `explicit`; initialize members in-class; `const` by default.
 
 ## Steps / patterns
