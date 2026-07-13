@@ -12,9 +12,10 @@ irreversible.
 - **Roles** ([agents/](agents/)) are generic and project-agnostic. Each file is a complete agent
   prompt: identity, responsibilities, delegation & escalation rules, skills to load, and working
   principles. Every role decides for itself whether a task is theirs or belongs to another role.
-- **Rosters** ([AGENTS.md](AGENTS.md)) pick which roles are active. AGENTS.md is the single home
-  for their line-ups, routing rules, the always-on working agreements, and the roster-specific
-  tagged duties that apply only within a given roster.
+- **Rosters** ([AGENTS.md](AGENTS.md)) pick which roles are active; each roster's line-up lives in
+  [rosters/](rosters/), loaded on demand. AGENTS.md itself is the single home for the routing
+  rules, the always-on working agreements, and the roster-specific tagged duties that apply only
+  within a given roster.
 - **Skills** ([skills/](skills/README.md)) keep the roles technology-free: one folder per skill,
   prefixed by area, loaded only when a task needs it.
 

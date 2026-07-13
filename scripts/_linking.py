@@ -116,3 +116,8 @@ class RepoContents:
     def skill_dirs(self) -> list[Path]:
         """Every ``skills/<name>/`` directory, sorted by name."""
         return sorted(p for p in (self.root / "skills").iterdir() if p.is_dir())
+
+    @property
+    def rosters_dir(self) -> Path:
+        """The ``rosters/`` directory, linked as a whole (AGENTS.md links into it)."""
+        return self.root / "rosters"

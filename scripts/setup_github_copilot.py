@@ -2,9 +2,10 @@
 """Make this repo's agents, skills, and rosters visible to GitHub Copilot in a project.
 
 Symlinks every ``agents/*.agent.md`` file and every ``skills/<name>/`` directory, plus
-``AGENTS.md`` itself, into a target project's ``.github/`` directory. GitHub Copilot has
-no known machine-wide config directory, so this must be pointed at each project that
-should see this repo's roster. Safe to re-run any time.
+``AGENTS.md`` and the ``rosters/`` directory it links into, into a target project's
+``.github/`` directory. GitHub Copilot has no known machine-wide config directory, so
+this must be pointed at each project that should see this repo's roster. Safe to re-run
+any time.
 """
 
 from __future__ import annotations
@@ -54,7 +55,10 @@ def main() -> None:
             SymlinkSpec(source=path, target=github_dir / "skills" / path.name)
             for path in contents.skill_dirs
         ]
-        + [SymlinkSpec(source=REPO_ROOT / "AGENTS.md", target=github_dir / "AGENTS.md")]
+        + [
+            SymlinkSpec(source=REPO_ROOT / "AGENTS.md", target=github_dir / "AGENTS.md"),
+            SymlinkSpec(source=contents.rosters_dir, target=github_dir / "rosters"),
+        ]
     )
     sys.exit(0 if install_and_report(installer, specs) else 1)
 
