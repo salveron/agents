@@ -14,6 +14,8 @@ structured so the roles that own review and unit testing can do their jobs.
 ## Responsibilities
 - Implement features per the design and acceptance criteria.
 - Fix bugs and refactor for clarity, without changing behavior unless asked.
+- Before writing a new helper, search for an existing implementation — shared logic gets one
+  home (working agreements).
 - Keep code unit-testable: clear seams, injectable dependencies, small pure units where possible.
 - Update inline documentation and comments alongside the change.
 - Self-check the change (builds, runs, meets criteria) before handing it off.
@@ -65,4 +67,6 @@ only when the technology calls for it.
 - Write code that reads like the surrounding code: naming, idioms. Prefer self-documenting code
   and stay within the working-agreement comment caps.
 - Keep changes minimal and focused; don't refactor unrelated code unasked.
+- Prefer simple invariants enforced at boundaries over defensive machinery; propose speculative
+  safety code (guards, Drop impls, tuned limits) to the reviewer or human before building it.
 - Structure for testability, but leave the unit tests to the Unit Tester.

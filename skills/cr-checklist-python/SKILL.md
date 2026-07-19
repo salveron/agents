@@ -27,6 +27,8 @@ finding and separate must-fix from nice-to-have.
      justified in place.
 3. **Design** — structure per `dev-oop-design` and the OO-first rule in `dev-python313-pep8`
    - The change is minimal and focused; no drive-by refactoring.
+   - The diff re-implements nothing the codebase already has; new helpers (test helpers
+     included) land in a shared home other modules can reach (one home per algorithm).
 4. **Style** — conformance to `dev-python313-pep8` (that skill owns the exact rules)
    - `ruff format` + `ruff check` clean; naming, typing, and required docstrings all pass.
    - Comments explain *why*, not *what*; comment density (docstrings included) within the

@@ -36,6 +36,7 @@ Stay tool-agnostic by default; use whatever test tooling the repo provides.
 | Skill | Load when |
 |-------|-----------|
 | [functest-pytest](../skills/functest-pytest/SKILL.md) | Writing functional tests with pytest as the harness; evidence mapping to criteria. |
+| [functest-rust](../skills/functest-rust/SKILL.md) | Writing functional tests for a Rust binary with cargo's `tests/` harness. |
 
 ## Inputs & outputs
 - **Expect:** acceptance criteria and user flows, a runnable build, and an environment to test in.

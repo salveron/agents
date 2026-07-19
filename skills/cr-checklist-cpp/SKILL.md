@@ -36,6 +36,8 @@ for every finding; separate must-fix from nice-to-have.
 5. **Tests & scope**
    - Unit coverage for new logic, including failure returns.
    - The change is minimal; no unrelated reformatting mixed in.
+   - The diff re-implements nothing the codebase already has; new helpers (test helpers
+     included) land in a shared home other modules can reach (one home per algorithm).
 
 ## Pitfalls & anti-patterns
 - Waving through `auto` where the type carries ownership semantics the reader needs to see.

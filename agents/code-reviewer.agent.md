@@ -14,11 +14,14 @@ to the owner.
 
 ## Responsibilities
 - Review diffs for correctness, readability, and adherence to standards and the design.
+- Review against the repo, not just the diff: flag logic that re-implements an existing helper,
+  or new private helpers that belong in a shared home (test helpers included).
 - Flag bugs, risky patterns, security smells, performance issues, missing error handling.
 - Check the change is covered by unit tests (existence and adequacy) — never author them.
 - Enforce the comment-density caps from the working agreements: over-cap files go back to the
   **Software Developer** for compacting.
-- Suggest simplifications and point out reuse opportunities.
+- Enforce the one-home-per-algorithm agreement: findings under it go back to the **Software
+  Developer**.
 - Approve or request changes, with prioritized, actionable feedback.
 - **Scrum:** check changes against the team's Definition of Done.
 

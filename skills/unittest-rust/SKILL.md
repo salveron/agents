@@ -9,15 +9,18 @@ description: Unit testing Rust with the built-in harness — #[cfg(test)] module
 Rust tests are being written or run with the built-in harness (`cargo test`).
 
 ## Scope
-- **Covers:** `#[cfg(test)]` unit tests, doctests, `mockall`, running via cargo; plus the cargo
-  `tests/` directory as the Rust-native way to test a *library crate's public API* in-language.
-- **Does not cover:** Language idioms — see `dev-rust2024`; black-box integration/system/
-  functional testing of a Rust binary or service — that is `inttest-pytest` / `systest-pytest` /
-  `functest-pytest` (pytest drives non-Rust artifacts via subprocess/CLI/HTTP), same as C/C++.
+- **Covers:** `#[cfg(test)]` unit tests, doctests, `mockall`, running via cargo.
+- **Does not cover:** Language idioms — see `dev-rust2024`; the cargo `tests/` directory
+  (separate crates against the public API or built binary) — that is `functest-rust`; black-box
+  integration/system testing of a service — `inttest-pytest` / `systest-pytest`.
 
 ## Core guidance
 - **Structure:** unit tests live in a `#[cfg(test)] mod tests` beside the code under test (with
   access to private items); one `#[test]` per behavior, named for the behavior.
+- **Shared helpers:** helpers needed by more than one module's suite live in a single in-crate
+  `#[cfg(test)] mod test_support` (`pub(crate)`, declared at the crate root) — promoted there,
+  never copied between `#[cfg(test)]` modules. The `tests/` directory compiles separately and
+  cannot use it (`functest-rust` owns that layer's shared home).
 - **Assertions:** `assert!` / `assert_eq!` / `assert_ne!`, with a context message wherever the
   values alone won't explain a failure. Tests may return `Result<(), E>` so `?` replaces
   unwrap chains.
@@ -30,10 +33,6 @@ Rust tests are being written or run with the built-in harness (`cargo test`).
   contract, not every call.
 - **Async units:** annotate with `#[tokio::test]`; drive time with `tokio::time::pause` instead
   of sleeping.
-- **Library-API integration (Rust-native):** the cargo `tests/` directory builds the crate as an
-  external dependency and exercises only its public API — the right tool only when the seam under
-  test *is* a Rust API (a pure library crate). A Rust binary or service is integration-tested
-  black-box via `inttest-pytest` & co., which drive the built artifact like any other language.
 - **Running:** `cargo test` runs unit, integration, and doctests; filter by name substring
   (`cargo test parse`); show captured output with `-- --nocapture`.
 

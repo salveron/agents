@@ -44,6 +44,8 @@ location for every finding; separate must-fix from nice-to-have.
 6. **Tests & scope**
    - Unit coverage for new logic including `Err` paths; doctests still true.
    - The change is minimal; no unrelated reformatting mixed in.
+   - The diff re-implements nothing the codebase already has; new helpers (test helpers
+     included) land in a shared home other modules can reach (one home per algorithm).
 
 ## Pitfalls & anti-patterns
 - Waving through `unsafe` because "it compiles" — the compiler checks nothing inside it.

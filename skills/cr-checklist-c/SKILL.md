@@ -36,6 +36,9 @@ everything else in the review. Cite a location for every finding.
    - `const` correctness; `NULL`-handling of parameters documented in the function comment.
    - Comment density within the working-agreement caps: documentation in headers, sources
      inline-only.
+6. **Reuse & scope**
+   - The diff re-implements nothing the codebase already has; new helpers (test helpers
+     included) land in a shared home other modules can reach (one home per algorithm).
 
 ## Pitfalls & anti-patterns
 - Reviewing the happy path only — most C defects live in the error path.

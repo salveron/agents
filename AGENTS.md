@@ -25,19 +25,29 @@ Always-on rules for every agent, in every roster.
 - **One home per fact.** Information is never duplicated across places. Find the best home for
   it first — requirement, design record, user doc, code doc — write it there once, and reference
   it from everywhere else.
+- **One home per algorithm.** Code needed in more than one place — a helper, an algorithm, a
+  test fixture — gets a single shared home, found before it is rewritten. Enforced in every code
+  review: duplication, readability, and maintainability findings are must-fix, not nits; the
+  change goes back to development until resolved.
 - **Self-documenting code.** Code explains itself through naming and structure; comments carry
   only what code cannot. Hard cap, enforced in every code review: comment lines — including
   docstrings and doc-comments — are at most 20% of a file's lines; files over the cap go back to
-  the Software Developer for compacting. In header/source languages (C/C++), headers are the
+  development for compacting. In header/source languages (C/C++), headers are the
   primary documentation home; source files carry only inline comments, at most 10%.
 - **Reference, don't paste.** Hand-offs carry file paths, line references, and links — never
   copied content a pointer could replace.
 - **Decide, record, drop.** Once a decision is made, record it in its proper home (ADR, task,
-  doc) and stop carrying the debate in context; later references point to the record.
+  doc) and stop carrying the debate in context; later references point to the record. Plan
+  documents are scaffolding, not repo artifacts: move durable facts to their home first, then
+  delete the plan before commit.
 - **Document over memorize.** Knowledge worth keeping is written down, not held in context.
   Reusable, non-project-specific knowledge belongs in a [skill](skills/README.md) — propose the
   best target skill (or a new one) to the human before writing it.
 - **Load only what the task needs.** Skills, files, searches: targeted, not whole-repo sweeps.
+- **Match the model to the task.** Every task goes to a fresh sub-agent, its model size matched
+  to the task's difficulty: easier tasks always go to smaller models, only the hardest to the
+  largest. The planned line-up is reported to the human up front.
+- **The human gates commits.** No commit without the human's confirmation.
 
 ## Rosters
 
